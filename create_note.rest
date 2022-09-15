@@ -1,0 +1,16 @@
+GET http://localhost:3001/api/notes/
+
+###
+DELETE http://localhost:3001/api/notes/2
+
+###
+POST http://localhost:3001/api/notes/
+Content-Type: application/json; charset=utf-8
+
+{
+  "content": "REST client is a good tool for testing a REST API",
+  "important": false
+}
+
+###
+GET http://localhost:3001/api/notes/
